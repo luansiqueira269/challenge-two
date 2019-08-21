@@ -23,11 +23,11 @@
 * Também fiquei em dúvida, não sei se era para colocar o texto em cima da foto, ou o texto acima da foto.
 * Me pareceu correto afirmar que era para colocar em cima. 
 
-##Botão salvar para armazenar em local storage(funcionalidade HTML5) as informações selecionadas pelo usuário + Data e Horário.
+## Botão salvar para armazenar em local storage(funcionalidade HTML5) as informações selecionadas pelo usuário + Data e Horário.
 * feito
 
-##Após ação de salvar deve ter uma mensagem de sucesso na tela.
+## Após ação de salvar deve ter uma mensagem de sucesso na tela.
 * Coloquei uma mensagem que some depois de um tempinho.
 
-##Caso a página seja recarregada as informações salvas pelo usuário deverão permanecer na tela.
+## Caso a página seja recarregada as informações salvas pelo usuário deverão permanecer na tela.
 * Feito.
