@@ -1,19 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <title> Dog Api </title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="language" content="pt-BR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="common.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script type="text/javascript" src="common.js"></script>
 
 </head>
 
-<body>
+<body class="home">
+
+    <div class="container lnx_shadow-box">
+
+        <div id="lnx_loading" class="lnx_loading-overlay">
+
+            <div class="lnx_loading-content">
+                <div class="lnx_loading-mask">
+                    <div class="lnx_loading-line"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lnx_text-header lnx_box-header lnx_text-center lnx_primary-text">
+
+            Escolha seu Cachorro
+
+        </div>
+
+        <div class="row">
+
+            <form id="lxn_form-dog" class="lnx_form-dog col-md-6 col-12" action="javascript:void(0);">
+
+                <fieldset>
+
+                    <div class="col-12">
+
+                        <div class="lnx_input-group">
+
+                            <select name="raca" id="SelectRacaDog" class="lnx_input-box" placeholder="Escolha a Raça do Cachorro">
+                                <option value="defalt">Escolha a Raça do Cachorro*</option>
+                            </select>
+
+                            <label for="raca" class="lnx_label-dog lnx_primary-text">Raça do Cachorro (shihtzu)</label>
+
+                        </div>
+
+                        <div class="lnx_input-divisor lnx_primary-text lnx_text-center">
+
+                            ou
+
+                        </div>
+
+                        <div class="lnx_input-group">
+
+                            <input type="text" name="raca" id="InputRacaDog" class="lnx_input-box" placeholder="Digite a Raça do Cachorro" autocomplete="off">
+                            <label for="raca" class="lnx_label-dog lnx_primary-text">Digite a Raça do Cachorro (shihtzu)</label>
+
+                            <ul id="InputListSimilarity" class="lnx_input-list"></ul>
+
+                        </div>
+
+                        <div class="lnx_input-group mt-5 mb-4">
+
+                            <input type="text" name="raca" id="ApelidoDog" class="lnx_input-box" placeholder="Digite o Nome do Cachorro" autocomplete="off">
+                            <label for="raca" class="lnx_label-dog lnx_label-apelido lnx_primary-text">Digite o Apelido do Cachorro (Theo)</label>
+
+                        </div>
+
+                        <div class="lnx_input-group mt-5 mb-4">
+
+                            <select name="raca" id="SelectCor" class="lnx_input-box" placeholder="Escolha a Cor">
+
+                                <option value="defalt">Escolha a Cor do Texto*</option>
+
+                                <option value="preto" data-color="#000000">Preto</option>
+                                <option value="azul" data-color="#0600ff">Azul</option>
+                                <option value="rosa" data-color="#de00ff">Rosa</option>
+                                <option value="vermelho" data-color="#ff0000">Vermelho</option>
+                                <option value="roxo" data-color="#b400ff">Roxo</option>
+
+                            </select>
+
+                            <label for="raca" class="lnx_label-dog lnx_primary-text">Cor do Texto</label>
+
+                        </div>
+
+                        <div class="lnx_input-group mt-5 mb-4">
+
+                            <select name="raca" id="SelectFont" class="lnx_input-box" placeholder="Escolha a Cor">
+
+                                <option value="defalt">Escolha a Fonte do Texto*</option>
+
+                                <option value="Roboto">Roboto</option>
+                                <option value="Livvic">Livvic</option>
+                                <option value="Lexend+Deca">Lexend Deca</option>
+                                <option value="Lato">Lato</option>
+                                <option value="Hepta+Slab">Hepta Slab</option>
+
+                            </select>
+
+                            <label for="raca" class="lnx_label-dog lnx_primary-text">Fonte do Texto</label>
+
+                        </div>
+
+                        <div class="lnx_input-group mt-1 mb-4 lnx_text-center">
+
+                            <button type="submit" class="btn lnx_btn-save"> Salvar Informações </button>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+            <div class="col-md-6 col-12 pb-2">
+
+                <div id="ImageDog" class="lnx_image-dog">
+
+                    <div id="lnx_loading_img" class="lnx_loading-overlay lnx_hidden">
+
+                        <div class="lnx_loading-content">
+                            <div class="lnx_loading-mask">
+                                <div class="lnx_loading-line"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="DogText" class="lnx_dog-name lnx_text-center">
+
+                    <div id="NomeDog"> </div>
+                    <div id="NickDog"> </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 </body>
-
 </html>
